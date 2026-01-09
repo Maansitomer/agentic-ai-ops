@@ -6,8 +6,8 @@ import plotly.express as px
 # ---------------------------
 # CONFIG (UNCHANGED)
 # ---------------------------
-BACKEND_ASK_URL = "http://127.0.0.1:8000/api/ask"
-BACKEND_DEBUG_URL = "http://127.0.0.1:8000/api/debug"
+BACKEND_ASK_URL = "https://agentic-ai-ops-backend.onrender.com/api/ask"
+BACKEND_DEBUG_URL = "https://agentic-ai-ops-backend.onrender.com/api/debug"
 
 st.set_page_config(
     page_title="Agentic AI Ops Platform",
@@ -297,3 +297,4 @@ with tabs[3]:
         )
 
     st.markdown("</div>", unsafe_allow_html=True)
+
