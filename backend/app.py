@@ -13,3 +13,9 @@ app.include_router(debug_router)
 @app.get("/")
 def health_check():
     return {"status": "Backend is running"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("backend.app:app", host="0.0.0.0", port=8000)
+
+
